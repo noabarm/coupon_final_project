@@ -1,0 +1,28 @@
+.loginAdmin {
+	margin-top: 1%;
+    background-color: #fac381 ;
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.HeadLine{
+    text-align: left;
+    margin-left: 5%;
+    font-size: 30px;
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(255, 255, 255);
+}
+
+.LoginTextField{
+    background-color: aliceblue;
+    width: 20%;
+}
+
+
+#sendLoginButton{
+    background-color: rgb(105, 165, 184);
+    color: white;
+    
+}
+

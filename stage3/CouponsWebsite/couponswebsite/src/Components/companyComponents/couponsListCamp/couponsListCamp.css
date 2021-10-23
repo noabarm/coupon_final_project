@@ -1,0 +1,139 @@
+.couponsListCamp {
+	grid-template-rows: 27% 75% 10%;
+    display: grid;
+    height:100%;
+}
+
+.couponsListCamp>main{
+    overflow:auto;
+    height:96%;
+}
+
+.searchCouponButton{
+    width: 97.5%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". . . . . . . . . . . . . ."; 
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+.searchIcon{
+    grid-column: span 1;
+    grid-column-start: 13;
+    justify-self: end;
+    margin-top: 1%;
+    margin-right: 3%;
+}
+
+.searchPlace{
+	width: 100%;
+    text-align: center;
+	border: 0ch;
+	padding: 10px 10px;
+	border-radius: 5px;
+	background-color:white;
+    grid-column: span 1;
+    grid-column-start:14;
+}
+
+#categoryList{
+    width: 100%;
+    text-align: center;
+	border: 0ch;
+	border-radius: 5px;
+	background-color:white;
+}
+
+#categoryBox{
+    margin-top: 10%;
+	border-radius: 5px;
+    grid-column: span 2;
+    grid-column-start:14; 
+    grid-column-end:14; 
+}
+
+.headerChart{
+    background-color: rgb(207, 143, 58);
+    width: 100%;
+    border-radius: 5px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas:  ". . . . . . . . . . . . . ."; 
+    justify-items: center;
+   
+}
+
+.Colum{
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    grid-column: span 1;
+    padding: 10px 10px;
+    text-align: left;
+}
+
+.ColumCategory{
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    grid-column: span 1;
+    padding: 10px 10px;
+    text-align: left;
+    margin-left: 20%;
+}
+
+.ColumDescription{
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    grid-column: span 3;
+    padding: 10px 10px;
+    text-align: left;
+    grid-column-start: 3;
+    grid-column-end: 8;
+}
+.addCoupButton{
+    width: 75%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas:  ". . . . . . . . . . . . . ."; 
+   
+}
+.addButton{
+    color: white;
+	width: 100%;
+    text-align: center;
+	border: 0ch;
+	padding: 10px 10px;
+	border-radius: 5px;
+	background-color:rgb(105, 165, 184);
+    grid-column: span 1;
+}
+
+.popoverAdd{
+	border-radius: 5px;
+}
+
+#SliderBox{
+    margin-top: 10%;
+    grid-column-start:12; 
+}
+
+#priceSlider{
+    color: rgb(105, 165, 184);;
+}
+
+.couponsListCamp>footer{
+    margin-top: 2%;
+    display: block; 
+}
+
+

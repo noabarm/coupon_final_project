@@ -1,0 +1,93 @@
+.customersList {
+    grid-template-rows: 20% 70% 10%;
+    display: grid;
+    height:100%;
+}
+
+.customersList>main{
+    overflow:auto;
+    height:96%;
+}
+
+.searchCustomerButton{
+    width: 75%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". . . . . . . ."; 
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+.searchCusIcon{
+    grid-column: span 1;
+    grid-column-start: 7;
+    justify-self: end;
+    margin-top: 1%;
+    margin-right: 3%;
+}
+
+.searchCusPlace{
+	width: 63%;
+    text-align: center;
+	border: 0ch;
+	padding: 10px 10px;
+	border-radius: 5px;
+	background-color:white;
+    grid-column: span 1;
+    grid-column-start: 8;
+}
+
+.headerChartAdminCus{
+    background-color: rgb(207, 143, 58);
+    width: 74%;
+    border-radius: 5px;
+    display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . . . . . . ."; 
+}
+
+.Colum{
+    font-size: 1.1rem;
+    color: white;
+    width: 100%;
+    grid-column: span 1;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.addCusButton{
+  width: 75%;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . . . . . ."; 
+   
+}
+
+.addButton{
+    color: white;
+	width: 70%;
+    text-align: center;
+	border: 0ch;
+	padding: 10px 10px;
+	border-radius: 5px;
+	background-color:rgb(105, 165, 184);
+    grid-column: span 1;
+}
+
+.popoverAdd{
+	border-radius: 5px;
+}
+
+.customersList>footer{
+    margin-top: 2%;
+    display: block;
+}

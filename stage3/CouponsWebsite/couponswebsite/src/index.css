@@ -1,0 +1,50 @@
+html,body,#root{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+  color: rgb(141, 132, 132);
+  background-color: rgb(213, 225, 230);
+  overflow: auto;
+  /*background-image: linear-gradient(45deg, red,white);*/
+}
+
+.couponBox{
+  text-align: center;
+  border: 1PX  black;
+  color: rgb(63, 55, 55);
+  font-style: normal;
+	font-size: 1rem;
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 16%;
+  height: 380px;
+  background-color: rgb(224, 232, 233);
+  font-family: 'Alumni Sans',
+}
+
+.companyBox{
+  color: rgb(63, 55, 55);
+  font-style: normal;
+	font-size: 14px;
+  padding: 20px 20px;
+  border-radius: 5px;
+  width: 100%;
+  height:20%;
+  background-color: rgb(224, 232, 233);
+  font-family: 'Alumni Sans',
+}
+
+.couponTableBox{
+  color: rgb(63, 55, 55);
+  font-style: normal;
+	font-size: 14px;
+  padding: 20px 20px;
+  border-radius: 5px;
+  width: 100%;
+  height:20%;
+  background-color: rgb(224, 232, 233);
+  font-family: 'Alumni Sans',
+}

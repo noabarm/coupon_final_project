@@ -1,0 +1,80 @@
+.signIn{
+	width: 90%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas:  ". . . . . . . . . . . ."; 
+    display: grid;
+    margin-left: 8%;
+}
+
+.users{
+    margin-top: 15%;
+    margin-left: 5%;
+    text-align: left;
+    font-style: normal;
+	font-size: 18px;
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(255, 255, 255);
+    grid-column-start: 2;
+}
+
+
+.loginNav{
+    color: rgb(255, 255, 255);
+    margin-left: 3%;
+    margin-right: 5%;
+    text-decoration: none;
+    grid-column: span 1;
+}
+
+.user{
+    margin-top: 16%;
+    grid-column-start:6; 
+    grid-column-end:8; 
+    font-size: 1.2rem; 
+    font-family: 'Open Sans Condensed';
+    color: white;
+    text-align: initial;
+    margin-right: 5%;
+}
+
+.logoutNav{
+    color: rgb(255, 255, 255);
+    margin-top: 32%;
+    text-decoration: none;
+    grid-column: span 1;
+    grid-column-start:10;
+    text-align: left;
+    font-size: 1.3rem;
+    font-style: normal;
+}
+
+.singUpButton{
+    display: grid; 
+    gap: 0px 0px; 
+    grid-column: span 1;
+    grid-column-start:9;
+    margin-top: 24%;     
+}
+  
+.regButton{
+    color: white;
+    text-align: right;
+    border: 0ch;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color:rgb(105, 165, 184);
+    grid-column: span 1;
+    font-family: 'Open Sans Condensed';
+    font-size: 1.3rem; 
+    height: 60%;
+    
+}
+
+.logo{
+    grid-column-start:1; 
+}
+
+
+

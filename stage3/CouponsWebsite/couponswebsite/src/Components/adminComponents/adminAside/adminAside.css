@@ -1,0 +1,21 @@
+.adminAside {
+    margin-left: 1%;
+    margin-top: 2%;
+    text-align: left;
+    font-style: normal;
+	font-size: 14px;
+    font-family: 'Libre Baskerville', serif;
+    color:#ad6a18	
+}
+
+.adminNav{
+    color: #ad6a18;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-decoration: none;  
+}
+
+.title{
+    text-align: left;
+    color: rgb(63, 55, 55);
+}

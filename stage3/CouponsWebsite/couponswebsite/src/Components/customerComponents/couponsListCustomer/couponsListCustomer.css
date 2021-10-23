@@ -1,0 +1,15 @@
+.couponsListCustomer {
+    grid-template-rows: 20% 80%;
+	text-align: left;
+    margin-left: 5%;
+    color: rgb(63, 55, 55);
+    margin-bottom: 10%;
+    display: grid;
+    height:100%;
+}
+
+.couponsListCustomer>main{
+    margin-top: 8%;
+    overflow: auto;
+    height: 90%;
+}

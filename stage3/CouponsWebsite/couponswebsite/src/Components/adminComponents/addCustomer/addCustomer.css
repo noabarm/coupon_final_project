@@ -1,0 +1,17 @@
+.addCustomer {
+	font-family: 'Libre Baskerville', serif;
+    color:#ad6a18;
+    font-style: normal;
+	font-size: 14px;
+    margin: 10%;
+}
+
+#sendButton{
+    color: white;
+	width: 70%;
+    text-align: center;
+	border: 0ch;
+	padding: 10px 10px;
+	border-radius: 5px;
+	background-color:rgb(105, 165, 184);
+}

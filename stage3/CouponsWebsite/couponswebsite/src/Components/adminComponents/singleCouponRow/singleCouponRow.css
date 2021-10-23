@@ -1,0 +1,27 @@
+.singleCouponRow {
+    margin-top: 5%;
+    text-align: right; 
+    box-sizing: border-box;
+    display: grid; /*2d*/
+    grid-template-columns: repeat(6,1fr); 
+    color: rgb(63, 55, 55);
+}
+
+.text{
+    text-align: left;
+    grid-column: span 3;
+    margin-left: 10%;
+}
+
+.picture{
+    width: 20%;
+    text-align: right;
+}
+
+.description{
+    width: 60%;
+}
+
+.title{
+    font-size: 1.5rem;
+}

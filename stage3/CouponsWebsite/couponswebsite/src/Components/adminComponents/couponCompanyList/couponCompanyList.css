@@ -1,0 +1,15 @@
+.couponCompanyList {
+    grid-template-rows: 10% 90%;
+	text-align: left;
+    margin-left: 5%;
+    color: rgb(63, 55, 55);
+    margin-bottom: 10%;
+    display: grid;
+    height:100%;
+}
+
+.couponCompanyList>main{
+    margin-top: 5%;
+    overflow: auto;
+    height:96%;
+}

@@ -1,0 +1,40 @@
+.customerOpenPage {
+	height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+	background-image: url("https://backendlessappcontent.com/AE176C35-B9A0-07F6-FF0E-242CF8C99600/ACFDB970-70A6-45A1-9877-9716DEE3861D/files/img/customerOpenPage1.jpg");
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #7bccd6;
+    background-position-x: right;
+    margin-top: 2%;
+}
+
+.discriptionCustomer{
+    text-align: left;
+    color: rgb(63, 55, 55);
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 10%;
+    margin-top: 4%;
+    font-style: normal;
+    padding-top: 5%;
+
+}
+
+.aboutUsCustomer{
+    width: 250%;
+    font-size: 1.4rem;
+    font-family: 'Alumni Sans', sans-serif;
+    margin-top: 3%;
+   
+}
+
+.buneerTitle{
+    font-size:4rem;
+    margin-top: 2%;
+}

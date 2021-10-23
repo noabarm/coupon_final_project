@@ -1,0 +1,44 @@
+import jwtDecode from "jwt-decode";
+import { useEffect } from "react";
+import { BrowserRouter, useHistory } from "react-router-dom";
+import AuthenToken from "../../model/AuthenToken";
+import { loginUserString } from "../../redux/AuthState";
+import store from "../../redux/store";
+import notify from "../../utils/Notify";
+import CustomerAside from "../customerAside/customerAside";
+import CustomerRouting from "../customerRouting/customerRouting";
+import "./layoutCustomer.css";
+
+function LayoutCustomer(): JSX.Element {
+    var decoded: AuthenToken;
+    const history = useHistory();
+
+    useEffect(()=>{
+        decoded = jwtDecode(localStorage.getItem("token"));
+
+        console.log(decoded.clientType);
+
+        if (decoded.clientType !== "customer"){
+           notify.error("You are not allowed to enter this page!!")
+           history.push("/openPage");    
+        }
+
+        store.dispatch(loginUserString(localStorage.getItem("token")));
+        console.log(store.getState().authState.loginUser); 
+    });
+
+    return (
+        <div className="layoutCustomer">
+			<BrowserRouter>
+                <header className="customerHeader">
+                    <CustomerAside/>
+                </header>
+                <main className="customerMain">
+                    <CustomerRouting/>
+                </main>
+            </BrowserRouter>
+        </div>
+    );
+}
+
+export default LayoutCustomer;

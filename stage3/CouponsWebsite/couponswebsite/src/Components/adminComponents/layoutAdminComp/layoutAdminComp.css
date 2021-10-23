@@ -1,0 +1,27 @@
+.layoutAdminComp {
+    position: fixed;
+	height: 100%;
+    width: 70%;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    display: grid; /*2d*/
+    grid-template-rows: 10% 90%;
+    grid-template-columns: repeat(6,1fr);
+     /*fr=fraction, 6->6 size*/
+}
+
+.adminHeader{
+    grid-column: span 6;
+    margin-top: 2%;
+}
+
+.adminMain{
+    grid-column: span 6;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    height: 66%;
+   /* overflow: auto;*/
+}
+

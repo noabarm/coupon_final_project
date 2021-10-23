@@ -1,0 +1,20 @@
+.singleCouponFun {
+	display: inline-block;
+}
+
+.imgCoupon{
+	margin-top: 5%;
+}
+
+.buyButton{
+	color: white;
+    text-align: center;
+    border: 0ch;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color:rgb(105, 165, 184);
+    font-style: italic;
+    font-family: 'Open Sans Condensed';
+    font-size: 1rem; 
+	width: 40%;
+}

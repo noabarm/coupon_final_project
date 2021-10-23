@@ -1,0 +1,33 @@
+.singleCustomer {
+	text-align: center;
+	font-size: 1rem;
+    margin-top: 1.5%;
+	width: 75%;
+	height:15%;
+    box-sizing: border-box;
+    display: grid; /*2d*/
+    grid-template-columns: repeat(8,1fr);
+    color: rgb(63, 55, 55);
+	background-color: rgb(255, 255, 255);
+	align-content: center;
+	align-items: center
+}
+
+.listButton{
+	color: white;
+	width: 75%;
+    text-align: center;
+	border: 0ch;
+	padding: 10px 10px;
+	border-radius: 5px;
+	background-color:rgb(105, 165, 184);
+}
+
+.deleteButton{
+	background-color: crimson;
+}
+
+.popoverUpdate{
+	border-radius: 5px;
+}
+
