@@ -39,7 +39,7 @@ function CompanysList(): JSX.Element {
 
     let myNumber:number=0;
 
-    var decoded: AuthenToken;
+    let decoded: AuthenToken;
 
     function updateNumber(args:SyntheticEvent){
         myNumber = Number((args.target as HTMLInputElement).value);
@@ -49,7 +49,7 @@ function CompanysList(): JSX.Element {
     function searchCompany(){
         
         console.log(arrayCompanyDetails);
-        var arrayOneCompany = arrayCompanyDetails.filter(function(item){
+        let arrayOneCompany = arrayCompanyDetails.filter(function(item){
             return item.id === myNumber;
         });
 

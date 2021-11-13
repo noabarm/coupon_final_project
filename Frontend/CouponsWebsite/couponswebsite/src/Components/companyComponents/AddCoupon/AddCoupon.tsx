@@ -32,25 +32,25 @@ function AddCoupon(props:AddCouponProps): JSX.Element {
     const [imgName, setName] = useState<string>()
 
     const fixStartDate = (newDate:Date)=>{
-        var day = newDate.getDate().toString();
-        var mouth =(newDate.getMonth()+1).toString();
-        var year = newDate.getFullYear().toString();
+        let day = newDate.getDate().toString();
+        let mouth =(newDate.getMonth()+1).toString();
+        let year = newDate.getFullYear().toString();
         if(day.length<2){
             day = "0"+day;
         }
-        var startDate1 =year+"-"+mouth+"-"+day;
+        let startDate1 =year+"-"+mouth+"-"+day;
         console.log(startDate1);
         setStartDate(startDate1);
     }
 
     const fixEndDate = (newDate:Date)=>{
-        var day = newDate.getDate().toString();
-        var mouth =(newDate.getMonth()+1).toString();
-        var year = newDate.getFullYear().toString();
+        let day = newDate.getDate().toString();
+        let mouth =(newDate.getMonth()+1).toString();
+        let year = newDate.getFullYear().toString();
         if(day.length<2){
             day = "0"+day;
         }
-        var endDate1 =year+"-"+mouth+"-"+day;
+        let endDate1 =year+"-"+mouth+"-"+day;
         console.log(endDate1);
         setEndDate(endDate1);
     }
@@ -58,7 +58,7 @@ function AddCoupon(props:AddCouponProps): JSX.Element {
     const fileHandler = (myEvent:any)=>{
         console.log(myEvent);
         
-        var file : File =  myEvent.target.files[0];
+        let file : File =  myEvent.target.files[0];
         setName(file.name);
         Backendless.initApp("AE176C35-B9A0-07F6-FF0E-242CF8C99600","ACFDB970-70A6-45A1-9877-9716DEE3861D");
         Backendless.Files.upload(file, "img", true )

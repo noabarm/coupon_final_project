@@ -10,7 +10,7 @@ import CompanyRouting from "../companyRouting/companyRouting";
 import "./layoutCompanyComp.css";
 
 function LayoutCompanyComp(): JSX.Element {
-    var decoded: AuthenToken;
+    let decoded: AuthenToken;
     const history = useHistory();
     
     useEffect(()=>{

@@ -24,7 +24,7 @@ interface SingleCouponFunProps {
 function SingleCouponFun(props: SingleCouponFunProps): JSX.Element {
     const imgUrl = "https://backendlessappcontent.com/AE176C35-B9A0-07F6-FF0E-242CF8C99600/ACFDB970-70A6-45A1-9877-9716DEE3861D/files/img/"+props.couponDetails.image;
     const myUrl = globals.urls.customer + "purchaseCoupon";
-    var decoded: AuthenToken;
+    let decoded: AuthenToken;
 
   
     

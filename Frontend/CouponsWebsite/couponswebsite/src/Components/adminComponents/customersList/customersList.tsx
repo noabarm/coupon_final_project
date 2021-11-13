@@ -42,7 +42,7 @@ function CustomersList(): JSX.Element {
     
         let myNumber:number=0;
     
-        var decoded: AuthenToken;
+        let decoded: AuthenToken;
         
         function updateNumber(args:SyntheticEvent){
             myNumber = Number((args.target as HTMLInputElement).value);
@@ -51,7 +51,7 @@ function CustomersList(): JSX.Element {
     
         function searchCustomer(){
             console.log(arrayCustomerDetails);
-            var arrayOneCustomer = arrayCustomerDetails.filter(function(item){
+            let arrayOneCustomer = arrayCustomerDetails.filter(function(item){
                 return item.id === myNumber;
             });
             

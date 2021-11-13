@@ -17,7 +17,7 @@ function LoginAdmin(): JSX.Element {
     const [jwtToken,setToken] = useState("User has no token, bad bad user !!!");
     const history = useHistory();
     const myUrl = globals.urls.administrator + "login";
-    var decodedState: AuthenToken;
+    let decodedState: AuthenToken;
 
     function send(userDetails:UserDetails){
         userDetails.clientType = "administrator";

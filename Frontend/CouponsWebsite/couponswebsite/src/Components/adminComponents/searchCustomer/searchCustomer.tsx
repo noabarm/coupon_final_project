@@ -15,7 +15,7 @@ interface searchCustomer{
 function SearchCustomer(): JSX.Element {
     const myUrl = globals.urls.administrator + "customers/all";
     const{customerNum} = useParams<{customerNum?:string}>();
-    var [customerDetails,setData] = useState(new CustomerDetails());
+    let [customerDetails,setData] = useState(new CustomerDetails());
     let arrayCustomerDetails:CustomerDetails[]=[];
 
     useEffect(()=>{
@@ -30,7 +30,7 @@ function SearchCustomer(): JSX.Element {
         }
 
         console.log(arrayCustomerDetails);
-        var arrayOneCustomer = arrayCustomerDetails.filter(function(item){
+        let arrayOneCustomer = arrayCustomerDetails.filter(function(item){
             return item.id == Number(customerNum);
         });
 

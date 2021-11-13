@@ -21,7 +21,7 @@ function CouponCompanyList(props: CouponCompanyListProps ): JSX.Element {
 
     const [arrayCouponDetails,setData] = useState([]);
 
-    var arrayByCompany = arrayCouponDetails.filter(function(item){
+    let arrayByCompany = arrayCouponDetails.filter(function(item){
         return item.companyID == companyNum;
     });
     

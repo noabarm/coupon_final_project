@@ -10,7 +10,7 @@ import AdminRouting from "../adminRouting/adminRouting";
 import "./layoutAdminComp.css";
 
 function LayoutAdminComp(): JSX.Element {
-    var decoded: AuthenToken;
+    let decoded: AuthenToken;
     const history = useHistory();
     
     useEffect(()=>{

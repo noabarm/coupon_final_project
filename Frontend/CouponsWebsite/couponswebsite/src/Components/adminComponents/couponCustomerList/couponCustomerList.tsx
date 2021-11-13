@@ -20,8 +20,8 @@ function CouponCustomerList(props: CouponCustomerListProps ): JSX.Element {
 
 
     const{customerNum} = useParams<{customerNum?:string}>();
-    var [customersDetails,setData] = useState([]);
-    var [arrayCouponDetails,setCoupns]=useState([]);
+    let [customersDetails,setData] = useState([]);
+    let [arrayCouponDetails,setCoupns]=useState([]);
     
 
     useEffect(()=>{
@@ -38,7 +38,7 @@ function CouponCustomerList(props: CouponCustomerListProps ): JSX.Element {
             }
             if(customersDetails.length>0){
             console.log(customersDetails);
-            var arrayByCustomer = customersDetails.filter(function(item){
+            let arrayByCustomer = customersDetails.filter(function(item){
                 return item.id == Number(customerNum);
             });
             

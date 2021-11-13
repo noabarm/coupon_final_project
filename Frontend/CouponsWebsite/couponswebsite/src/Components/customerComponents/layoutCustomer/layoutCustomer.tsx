@@ -10,7 +10,7 @@ import CustomerRouting from "../customerRouting/customerRouting";
 import "./layoutCustomer.css";
 
 function LayoutCustomer(): JSX.Element {
-    var decoded: AuthenToken;
+    let decoded: AuthenToken;
     const history = useHistory();
 
     useEffect(()=>{

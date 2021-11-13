@@ -16,7 +16,7 @@ function TopSellers(): JSX.Element {
     
     const [couponsCompanyDetails,setCouponData] = useState([]);
 
-    var sortByCategory: CouponDetails[]=[];
+    let sortByCategory: CouponDetails[]=[];
    
     const [selectedCategory, setCategory] = useState('start');
 

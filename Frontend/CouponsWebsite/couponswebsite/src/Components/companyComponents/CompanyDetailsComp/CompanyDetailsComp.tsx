@@ -16,7 +16,7 @@ interface CompanyDetailsComp{
 }
 
 function CompanyDetailsComp(): JSX.Element {
-    var decoded: AuthenToken;
+    let decoded: AuthenToken;
     const history = useHistory();
     const myUrl = globals.urls.company + "details";
     const [companyDetails,setData] = useState([new CompanyDetails()]);
@@ -43,7 +43,7 @@ function CompanyDetailsComp(): JSX.Element {
             jwtAxios.post(myUrl)
                 .then((response)=>{
                 console.log(response.data);
-                var oneCompanyArray:CompanyDetails[] = []; 
+                let oneCompanyArray:CompanyDetails[] = []; 
                 oneCompanyArray.push(response.data);
                 store.dispatch(companyDownloadedAction(oneCompanyArray));
                 setData(oneCompanyArray);

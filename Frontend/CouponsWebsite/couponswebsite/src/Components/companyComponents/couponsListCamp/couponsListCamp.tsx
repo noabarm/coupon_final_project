@@ -43,9 +43,9 @@ function CouponsListCamp(): JSX.Element {
 
     const history = useHistory();
 
-    var decoded: AuthenToken;
-    var sortByCategory: CouponDetails[]=[];
-    var couponsArray:CouponDetails[]; 
+    let decoded: AuthenToken;
+    let sortByCategory: CouponDetails[]=[];
+    let couponsArray:CouponDetails[]; 
     const [selectedCategory, setCategory] = useState('start');
 
     const [price, setPrice] = useState<number | number[]>(5000);

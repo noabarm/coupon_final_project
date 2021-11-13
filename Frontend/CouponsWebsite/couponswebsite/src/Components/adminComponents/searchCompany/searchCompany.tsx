@@ -16,7 +16,7 @@ interface searchCompany{
 function SearchCompany(): JSX.Element {
     const myUrl = globals.urls.administrator + "companies/all";
     const{companyNum} = useParams<{companyNum?:string}>();
-    var [companyDetails,setData] = useState(new CompanyDetails());
+    let [companyDetails,setData] = useState(new CompanyDetails());
     let arrayCompanyDetails:CompanyDetails[]=[];
 
    /*
@@ -60,7 +60,7 @@ function SearchCompany(): JSX.Element {
         }
 
         console.log(arrayCompanyDetails);
-        var arrayOneCompany = arrayCompanyDetails.filter(function(item){
+        let arrayOneCompany = arrayCompanyDetails.filter(function(item){
             return item.id == Number(companyNum);
         });
 
